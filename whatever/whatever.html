@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>nodeValue Example</title>
+</head>
+<body>
+    <p id="myParagraph">This is some text.</p>
+
+    <script>
+        // Access the paragraph element by its ID
+        var paragraph = document.getElementById("myParagraph");
+
+        // Access and display the current text content
+        var currentText = paragraph.firstChild.nodeValue;
+        console.log("Current Text: " + currentText);
+
+        // Change the text content
+        paragraph.firstChild.nodeValue = "This is updated text.";
+    </script>
+</body>
+</html>
+
+
+
